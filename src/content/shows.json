@@ -1,0 +1,26 @@
+[
+  {
+    "city": "Berlin",
+    "venue": "Hotel Continental - Art Space in Exile",
+    "date": "2026-08-21T19:00:00+02:00",
+    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/"
+  },
+  {
+    "city": "Munich",
+    "venue": "Das Lihotzky",
+    "date": "2026-08-22T19:00:00+02:00",
+    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/"
+  },
+  {
+    "city": "Amsterdam",
+    "venue": "Boom Chicago",
+    "date": "2026-08-23T19:00:00+02:00",
+    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/"
+  },
+  {
+    "city": "Paris",
+    "venue": "La scène parisienne",
+    "date": "2026-08-28T19:00:00+02:00",
+    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/"
+  }
+]
