@@ -18,6 +18,12 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (prefersReducedMotion()) return;
 
+    // Lenis's touch handling fights native momentum scroll on phones, and
+    // touch-fling velocity spikes made the skew/scale wobble look janky
+    // rather than playful. Desktop only — mobile gets plain native scroll.
+    const isDesktop = window.matchMedia("(min-width: 768px) and (pointer: fine)").matches;
+    if (!isDesktop) return;
+
     gsap.registerPlugin(ScrollTrigger);
 
     const lenis = new Lenis({
