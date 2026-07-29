@@ -28,6 +28,9 @@ export function Footer() {
             <a href={siteConfig.social.facebook} target="_blank" rel="noreferrer" className="hover:text-white">
               Facebook
             </a>
+            <a href={siteConfig.ticketUrl} target="_blank" rel="noreferrer" className="hover:text-white">
+              Linktree
+            </a>
           </div>
         </div>
         <TicketButton />

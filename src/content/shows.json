@@ -1,26 +1,70 @@
 [
   {
+    "city": "Bangalore · Delhi · Mumbai",
+    "venue": "Multiple venues — see BookMyShow for dates",
+    "date": "2026-08-01T19:00:00+05:30",
+    "dateLabel": "India tour",
+    "ticketUrl": "https://in.bookmyshow.com/events/getting-there-by-rohan-joshi/ET00458896"
+  },
+  {
+    "city": "London",
+    "venue": "Soho Theatre",
+    "date": "2026-08-10T19:15:00+01:00",
+    "dateLabel": "Aug 10–15",
+    "ticketUrl": "https://sohotheatre.com/events/getting-there-by-rohan-joshi"
+  },
+  {
+    "city": "Birmingham",
+    "venue": "TBA",
+    "date": "2026-08-16T19:00:00+01:00",
+    "ticketUrl": "https://www.aegpresents.co.uk/event/rohan-joshi"
+  },
+  {
     "city": "Berlin",
     "venue": "Hotel Continental - Art Space in Exile",
     "date": "2026-08-21T19:00:00+02:00",
-    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/"
+    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi"
   },
   {
     "city": "Munich",
     "venue": "Das Lihotzky",
     "date": "2026-08-22T19:00:00+02:00",
-    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/"
+    "ticketUrl": "https://zeppelinentertainment.com/rohan-joshi-live-in-munich"
   },
   {
     "city": "Amsterdam",
     "venue": "Boom Chicago",
     "date": "2026-08-23T19:00:00+02:00",
-    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/"
+    "ticketUrl": "https://zeppelinentertainment.com/rohan-joshi-live-in-amsterdam"
   },
   {
     "city": "Paris",
     "venue": "La scène parisienne",
     "date": "2026-08-28T19:00:00+02:00",
-    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/"
+    "ticketUrl": "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi"
+  },
+  {
+    "city": "Köln",
+    "venue": "TBA",
+    "date": "2026-08-29T19:00:00+02:00",
+    "ticketUrl": "https://nrweventss.com/rohan-joshi-koln"
+  },
+  {
+    "city": "Glasgow",
+    "venue": "TBA",
+    "date": "2026-08-30T19:00:00+01:00",
+    "ticketUrl": "https://www.aegpresents.co.uk/event/rohan-joshi"
+  },
+  {
+    "city": "Stockholm",
+    "venue": "TBA",
+    "date": "2026-09-05T19:00:00+02:00",
+    "ticketUrl": "https://www.ticketly.eu/Event.aspx?eventId=49862"
+  },
+  {
+    "city": "Copenhagen",
+    "venue": "TBA",
+    "date": "2026-09-06T19:00:00+02:00",
+    "ticketUrl": "https://www.ticketly.eu/Event.aspx?eventId=49865"
   }
 ]

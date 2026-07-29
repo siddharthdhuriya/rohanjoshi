@@ -1,8 +1,10 @@
 export const siteConfig = {
   name: "Rohan Joshi",
   tagline: "Stand-up comedian. Professionally unqualified for everything else.",
-  ticketUrl:
-    "https://zeppelinentertainment.com/shows/getting-there-by-rohan-joshi/",
+  // Linktree aggregates every city's ticket link and is what Rohan himself
+  // posts on Instagram — the safest single "get tickets" destination since
+  // it stays current as new cities/dates get added.
+  ticketUrl: "https://linktr.ee/rojomojo",
   youtube: {
     handle: "@rohanjoshi8016",
     channelId: "UCW24Wt4EgHpuktSW6XAnt2g",

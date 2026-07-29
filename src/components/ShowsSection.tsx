@@ -2,8 +2,17 @@ import shows from "@/content/shows.json";
 import { siteConfig } from "@/config/site";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-US", {
+type Show = {
+  city: string;
+  venue: string;
+  date: string;
+  dateLabel?: string;
+  ticketUrl: string;
+};
+
+function formatDate(show: Show) {
+  if (show.dateLabel) return show.dateLabel;
+  return new Date(show.date).toLocaleDateString("en-US", {
     weekday: "short",
     month: "short",
     day: "numeric",
@@ -13,8 +22,8 @@ function formatDate(iso: string) {
 export function ShowsSection() {
   return (
     <section id="shows" className="relative bg-neutral-950 px-6 pb-24 pt-16 md:px-12">
-      <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-[0.85fr_1.15fr] md:items-start">
-        <ScrollReveal>
+      <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-[0.7fr_1.3fr] md:items-start">
+        <ScrollReveal className="md:sticky md:top-24">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/getting-there-poster.png"
@@ -29,12 +38,13 @@ export function ShowsSection() {
               On tour. <span className="text-accent">Currently.</span>
             </h2>
             <p className="mt-3 max-w-xl text-lg text-neutral-300">
-              &quot;Getting There&quot; — live dates, actual venues, real tickets.
+              &quot;Getting There&quot; — {shows.length} cities and counting.
+              Live dates, actual venues, real tickets.
             </p>
           </ScrollReveal>
 
           <ScrollReveal className="mt-10 flex flex-col divide-y divide-neutral-800" stagger>
-            {shows.map((show) => (
+            {(shows as Show[]).map((show) => (
               <div
                 key={`${show.city}-${show.date}`}
                 className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between"
@@ -44,7 +54,7 @@ export function ShowsSection() {
                     {show.city}
                   </p>
                   <p className="text-base text-neutral-300">
-                    {show.venue} · {formatDate(show.date)}
+                    {show.venue} · {formatDate(show)}
                   </p>
                 </div>
                 <a
@@ -60,14 +70,15 @@ export function ShowsSection() {
           </ScrollReveal>
 
           <p className="mt-8 text-base text-neutral-400">
-            More dates and cities added regularly — full schedule always on{" "}
+            New cities get added to the tour all the time — the full,
+            always-current list lives on{" "}
             <a
               href={siteConfig.ticketUrl}
               target="_blank"
               rel="noreferrer"
               className="text-neutral-200 underline underline-offset-4 hover:text-white"
             >
-              Zeppelin Entertainment
+              Rohan&apos;s Linktree
             </a>
             .
           </p>
